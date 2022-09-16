@@ -2,4 +2,6 @@ cd env/Scripts
 activate.bat
 cd ../../mysite
 python manage.py runserver
-pyton manage.py startapp myapp
+python manage.py startapp myapp
+python manage.py makemigrations
+python manage.py migrate
