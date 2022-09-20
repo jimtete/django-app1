@@ -6,8 +6,9 @@
     <body>
         <h1>This is a template, this is being rendered</h1>
         {% for p in products %}
+        <a href="{% url myapp:'product_detail' p.id %}">
             <h2>{{p.name}}</h2> --> {{p.price}} --> {{p.desc}}</br>
-
+        </a>
         {% endfor %}
     </body>
 
